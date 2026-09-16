@@ -717,6 +717,12 @@ section[id] { scroll-margin-top: var(--header-h); }
   color: var(--color-primary);
   transition: background-color 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease);
 }
+.social-row i{
+    color: black;
+}
+.social-row i:hover{
+    color: white;
+}
 .social-row a:hover { background: var(--color-primary); color: #fff; transform: translateY(-3px); }
 
 .contact-form {
