@@ -1,12 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InAmigos Foundation — Creating Change, Together</title>
+<meta name="description" content="InAmigos Foundation is a Section 8 registered non-profit working across India on education, food distribution, women empowerment, animal welfare, environmental sustainability and skill development.">
+
+<!-- Google Fonts: Fraunces (display/serif) + Work Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Favicon (inline leaf mark, no external asset needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4D3B'/%3E%3Cpath d='M18 40c0-14 10-22 26-22-2 15-10 24-26 22z' fill='%23E3A94B'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ============ HEADER / NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" aria-label="InAmigos Foundation — Home">
+      <span class="logo-mark" aria-hidden="true"><img src="images/InAmigos Logo.jpg"></span>
+      <span class="logo-text">InAmigos<span class="logo-text-accent">Foundation</span></span>
+    </a>
+
+    <nav class="main-nav" id="navMenu" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#causes" class="nav-link">Our Causes</a></li>
+        <li><a href="#impact-stats" class="nav-link">Impact</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#get-involved" class="nav-link">Get Involved</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#donate" class="btn btn-accent nav-cta">Donate Now</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img
+        class="hero-img js-img"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Tamil_Nadu_school_kids.jpg?width=1800"
+        alt="Children at a community school in rural Tamil Nadu, India"
+        fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
+    </div>
+
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Creating change. Together.</p>
+      <h1 class="hero-title reveal">Building a More Inclusive, Compassionate &amp; Empowered Society</h1>
+      <p class="hero-lead reveal">
+        InAmigos Foundation works across India through community-driven initiatives in education,
+        food distribution, women empowerment, animal welfare, environmental sustainability and
+        skill development — reaching families in every corner of the country.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#donate" class="btn btn-accent btn-lg">Donate Now</a>
+        <a href="#causes" class="btn btn-outline-light btn-lg">Explore Our Causes</a>
+      </div>
+
+      <ul class="trust-strip reveal" aria-label="Registrations and certifications">
+        <li><i class="fa-solid fa-landmark-flag" aria-hidden="true"></i> Section 8 Registered</li>
+        <li><i class="fa-solid fa-receipt" aria-hidden="true"></i> 80G &amp; 12A Certified</li>
+        <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> CSR‑1 Registered</li>
+      </ul>
+    </div>
+
+    <a href="#impact-stats" class="scroll-cue" aria-label="Scroll to impact statistics">
+      <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ============ IMPACT STATS ============ -->
+  <section class="stats" id="impact-stats" aria-labelledby="stats-heading">
+    <div class="container">
+      <h2 id="stats-heading" class="sr-only">Our impact in numbers</h2>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <p class="stat-number"><span data-count="50000">0</span><span class="stat-suffix">+</span></p>
+          <p class="stat-label">Beneficiaries</p>
+        </div>
+        <div class="stat-card reveal">
+          <p class="stat-number"><span data-count="28">0</span></p>
+          <p class="stat-label">States Reached</p>
+        </div>
+        <div class="stat-card reveal">
+          <p class="stat-number"><span data-count="200">0</span><span class="stat-suffix">+</span></p>
+          <p class="stat-label">Volunteers</p>
+        </div>
+        <div class="stat-card reveal">
+          <p class="stat-number"><span data-count="6">0</span></p>
+          <p class="stat-label">Core Causes</p>
+        </div>
+      </div>
+      <p class="stats-note">Figures as published by InAmigos Foundation.</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+
+      <div class="about-media reveal">
+        <div class="img-frame img-frame--tall">
+          <img class="js-img" loading="lazy"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/India_-_Kids_-_Planting_trees_for_her_future_(4040009491).jpg?width=1000"
+            alt="A child helping plant a sapling as part of an environmental initiative in India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        </div>
+        <div class="img-frame img-frame--float">
+          <img class="js-img" loading="lazy"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Self_Help_Group.jpg?width=700"
+            alt="A women's self-help group meeting in Maharashtra, India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-people-group"></i></span>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow reveal">About Us</p>
+        <h2 class="section-title reveal">About InAmigos Foundation</h2>
+        <p class="reveal">
+          InAmigos Foundation was founded on <strong>September 23, 2020</strong>, by
+          <strong>Mr. Govind Shukla</strong> (Founder &amp; CEO). It is a Section 8 registered
+          non-profit organization, licensed by the Central Government, with its base in
+          Chhattisgarh and operations that extend across India.
+        </p>
+        <p class="reveal">
+          The foundation holds 80G &amp; 12A certifications, is CSR‑1 registered for corporate
+          partnerships, is registered with NITI Aayog, and holds IAF ISO 9001:2015 certification —
+          together reflecting its commitment to transparency, accountability and consistent
+          quality of operations.
+        </p>
+
+        <div class="commitment reveal">
+          <p class="commitment-label">Our Commitment</p>
+          <ul class="commitment-list">
+            <li><i class="fa-solid fa-people-roof" aria-hidden="true"></i> People</li>
+            <li><i class="fa-solid fa-earth-asia" aria-hidden="true"></i> Planet</li>
+            <li><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i> Opportunity</li>
+            <li><i class="fa-solid fa-heart" aria-hidden="true"></i> Compassion</li>
+          </ul>
+        </div>
+
+        <a href="https://inamigosfoundation.org.in/page/About-Us" target="_blank" rel="noopener" class="btn btn-primary reveal">
+          Learn More About Us <i class="fa-solid fa-arrow-up-right-from-square btn-icon-suffix" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ============ TRUST / CREDENTIALS STRIP ============ -->
+    <div class="credentials">
+      <div class="container">
+        <p class="credentials-intro reveal">Registered, certified and recognised for transparent, accountable work.</p>
+        <ul class="credentials-grid" aria-label="Certifications and registrations">
+          <li class="credential-badge reveal"><i class="fa-solid fa-landmark-flag" aria-hidden="true"></i><span>Section 8 Registered</span></li>
+          <li class="credential-badge reveal"><i class="fa-solid fa-receipt" aria-hidden="true"></i><span>80G Certified</span></li>
+          <li class="credential-badge reveal"><i class="fa-solid fa-file-shield" aria-hidden="true"></i><span>12A Certified</span></li>
+          <li class="credential-badge reveal"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><span>CSR‑1 Registered</span></li>
+          <li class="credential-badge reveal"><i class="fa-solid fa-flag" aria-hidden="true"></i><span>NITI Aayog Registered</span></li>
+          <li class="credential-badge reveal"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span>IAF ISO 9001:2015</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR CAUSES ============ -->
+  <section class="causes" id="causes">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow reveal">Our Causes</p>
+        <h2 class="section-title reveal">Six causes, one shared mission</h2>
+        <p class="section-subtitle reveal">Small actions can create lasting change.</p>
+      </div>
+
+      <div class="causes-grid">
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Food_distribution_in_noida_by_bibharte_ngo_team_noida.jpg?width=900"
+              alt="Volunteers distributing food to underprivileged families">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-bowl-food"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-bowl-food" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Food &amp; Clothing Support</p>
+            <h3>Project Seva</h3>
+            <p>Providing food and clothing support to underprivileged communities across the regions we serve.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Classroom_in_a_Government_Primary_school_in_Kerala.jpg?width=900"
+              alt="Children learning inside a primary school classroom in India">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Education for Children</p>
+            <h3>Project Bachpanshala</h3>
+            <p>Supporting children's education, digital literacy, life skills and everyday learning opportunities.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/An_Indian_Pariah_Dog.jpg?width=900"
+              alt="A street dog in India, the kind of animal supported through welfare programs">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-paw"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-paw" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Animal Welfare</p>
+            <h3>Project Jeev</h3>
+            <p>Supporting stray and abandoned animals through feeding, protection and everyday care.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Self_Help_Group.jpg?width=900"
+              alt="Women taking part in a self-help group meeting in India">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-venus"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-venus" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Women Empowerment</p>
+            <h3>Project Udaan</h3>
+            <p>Supporting women through skill development, awareness, self-help groups and financial independence.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/India_-_Kids_-_Planting_trees_for_her_future_(4040009491).jpg?width=900"
+              alt="A child planting a sapling as part of a tree plantation drive">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Environment &amp; Sustainability</p>
+            <h3>Project Prakriti</h3>
+            <p>Tree plantation, environmental awareness, sustainability and conservation efforts.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="cause-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Students_inside_of_a_classroom_of_a_local_college_in_Howrah_district_of_West_Bengal,_India.jpg?width=900"
+              alt="Young adults in a classroom setting, representing skill development and employability training">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+            <span class="cause-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+          </div>
+          <div class="cause-body">
+            <p class="cause-tag">Skill Development &amp; Employability</p>
+            <h3>Project Vikas</h3>
+            <p>Internships, skill development, career exposure and employability opportunities for youth.</p>
+            <a href="https://inamigosfoundation.org.in/causes" target="_blank" rel="noopener" class="cause-link">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED IMPACT ============ -->
+  <section class="featured-impact">
+    <div class="container featured-grid">
+      <div class="featured-media reveal">
+        <div class="img-frame img-frame--wide">
+          <img class="js-img" loading="lazy"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Food_distribution_in_noida_by_bibharte_ngo_team_noida.jpg?width=1200"
+            alt="Volunteers organising a food distribution drive">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        </div>
+      </div>
+      <div class="featured-copy reveal">
+        <p class="eyebrow">Verified Impact</p>
+        <h2 class="section-title">Turning Compassion Into Action</h2>
+        <p class="section-subtitle-plain">
+          These figures reflect organizational impact reported by InAmigos Foundation across its
+          key initiatives.
+        </p>
+        <ul class="impact-list">
+          <li><strong>50,000+</strong> meals and clothing items distributed through Project Seva</li>
+          <li><strong>20,000+</strong> saplings planted through Project Prakriti</li>
+          <li><strong>50+</strong> stray animals fed daily through Project Jeev</li>
+          <li><strong>30,000+</strong> interns trained over the last four years through Project Vikas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW YOU CAN HELP ============ -->
+  <section class="get-involved" id="get-involved">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow reveal">Get Involved</p>
+        <h2 class="section-title reveal">How You Can Help</h2>
+      </div>
+
+      <div class="involve-grid">
+        <div class="involve-card reveal">
+          <div class="involve-icon"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i></div>
+          <h3>Donate</h3>
+          <p>Support causes that create direct social impact, from a warm meal to a child's first classroom.</p>
+          <a href="#donate" class="btn btn-primary">Donate Now</a>
+        </div>
+        <div class="involve-card reveal">
+          <div class="involve-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+          <h3>Volunteer</h3>
+          <p>Use your skills, time and energy to support communities across our six core causes.</p>
+          <a href="#volunteer" class="btn btn-primary">Become a Volunteer</a>
+        </div>
+        <div class="involve-card reveal">
+          <div class="involve-icon"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></div>
+          <h3>Join Us</h3>
+          <p>Become part of the movement and contribute your voice to meaningful, lasting change.</p>
+          <a href="https://inamigosfoundation.org.in/became-volunteer" target="_blank" rel="noopener" class="btn btn-primary">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONATION SECTION ============ -->
+  <section class="donate" id="donate">
+    <div class="container donate-grid">
+      <div class="donate-copy reveal">
+        <p class="eyebrow">Support Our Work</p>
+        <h2 class="section-title">Your Contribution Can Create Real Change</h2>
+        <p>
+          Every contribution supports initiatives across education, food distribution, women
+          empowerment, animal welfare, environmental sustainability and social inclusion.
+        </p>
+        <div class="donate-note">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <p>Secure payments are processed on InAmigos Foundation's official Razorpay donation
+          page. This form does not store or transmit your details — it simply prepares your
+          donation before handing you to the official, secure checkout.</p>
+        </div>
+      </div>
+
+      <form class="donate-card reveal" id="donateForm" novalidate>
+        <p class="donate-card-label">Choose an amount</p>
+        <div class="amount-grid" role="group" aria-label="Donation amount">
+          <button type="button" class="amount-btn" data-amount="500">₹500</button>
+          <button type="button" class="amount-btn" data-amount="1000">₹1,000</button>
+          <button type="button" class="amount-btn" data-amount="2500">₹2,500</button>
+          <button type="button" class="amount-btn" data-amount="5000">₹5,000</button>
+          <button type="button" class="amount-btn amount-btn--custom" id="customAmountToggle">Custom</button>
+        </div>
+        <div class="form-field" id="customAmountField" hidden>
+          <label for="customAmount">Custom amount (₹)</label>
+          <input type="number" id="customAmount" name="customAmount" min="1" placeholder="e.g. 1500">
+        </div>
+
+        <div class="form-field">
+          <label for="donorName">Full name</label>
+          <input type="text" id="donorName" name="donorName" autocomplete="name" required>
+          <span class="field-error" id="donorNameError"></span>
+        </div>
+        <div class="form-field">
+          <label for="donorEmail">Email</label>
+          <input type="email" id="donorEmail" name="donorEmail" autocomplete="email" required>
+          <span class="field-error" id="donorEmailError"></span>
+        </div>
+        <div class="form-field">
+          <label for="donorPhone">Phone</label>
+          <input type="tel" id="donorPhone" name="donorPhone" autocomplete="tel" required>
+          <span class="field-error" id="donorPhoneError"></span>
+        </div>
+
+        <p class="donate-selected">Selected amount: <strong id="selectedAmountDisplay">₹500</strong></p>
+
+        <button type="submit" class="btn btn-accent btn-lg btn-block">
+          Donate Now <i class="fa-solid fa-arrow-up-right-from-square btn-icon-suffix" aria-hidden="true"></i>
+        </button>
+        <p class="donate-fallback-note">You'll be redirected to <strong>rzp.io</strong>, InAmigos Foundation's official donation page.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="events" id="events">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow reveal">Latest Events</p>
+        <h2 class="section-title reveal">What We've Been Up To</h2>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://inamigosfoundation.org.in/public/storage/events/1738238109.jpg"
+              alt="World Water Day 2025 event banner">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-droplet"></i></span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-category">Community</span>
+              <time datetime="2025-03-22">22 March 2025</time>
+            </div>
+            <h3>World Water Day 2025</h3>
+            <p>Highlighting the importance of water conservation and collective action to ensure clean water for all.</p>
+            <a href="https://inamigosfoundation.org.in/event/world-water-day-2025" target="_blank" rel="noopener" class="cause-link">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://inamigosfoundation.org.in/public/storage/events/1738135259.jpeg"
+              alt="International Day of Happiness 2025 event banner">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-category">Community</span>
+              <time datetime="2025-03-20">20 March 2025</time>
+            </div>
+            <h3>International Day of Happiness 2025</h3>
+            <p>Spreading joy, positivity and well-being through engaging activities and inspiring discussions.</p>
+            <a href="https://inamigosfoundation.org.in/event/international-day-of-happiness-2025" target="_blank" rel="noopener" class="cause-link">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="img-frame">
+            <img class="js-img" loading="lazy"
+              src="https://inamigosfoundation.org.in/public/storage/events/1738134836.jpeg"
+              alt="International Day of Women and Girls in Science 2025 event banner">
+            <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta">
+              <span class="event-category">Education</span>
+              <time datetime="2025-02-11">11 February 2025</time>
+            </div>
+            <h3>International Day of Women and Girls in Science 2025</h3>
+            <p>Celebrating the International Day of Women and Girls in Science on February 11, 2025.</p>
+            <a href="https://inamigosfoundation.org.in/event/international-day-women-girls-science-2025" target="_blank" rel="noopener" class="cause-link">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOLUNTEER CTA ============ -->
+  <section class="volunteer" id="volunteer">
+    <div class="container volunteer-inner">
+      <p class="eyebrow reveal">Volunteer With Us</p>
+      <h2 class="section-title reveal">Be the Change You Wish to See</h2>
+      <p class="volunteer-lead reveal">
+        Whether you can give a few hours a month or lead a project from start to finish, your time
+        and skills can directly support communities across India.
+      </p>
+
+      <div class="volunteer-actions reveal">
+        <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Become a Volunteer</a>
+        <a href="https://inamigosfoundation.org.in/became-volunteer" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">Join Us Instead</a>
+      </div>
+
+      <p class="volunteer-note reveal">
+        The official volunteer form collects your first &amp; last name, email, phone, profession,
+        address, a short introduction, social links and a photo. It opens securely on Google Forms.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow reveal">Gallery</p>
+        <h2 class="section-title reveal">Moments From Our Work</h2>
+        <p class="section-subtitle reveal">A mix of photographs from our official gallery and illustrative images representing our cause areas.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button type="button" class="gallery-item reveal" data-caption="From the InAmigos Foundation gallery">
+          <img class="js-img" loading="lazy" src="https://inamigosfoundation.org.in/public/storage/gallery/1743051485.jpg" alt="Photograph from the InAmigos Foundation gallery">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-image"></i></span>
+          <span class="gallery-overlay">Community Impact</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="From the InAmigos Foundation gallery">
+          <img class="js-img" loading="lazy" src="https://inamigosfoundation.org.in/public/storage/gallery/1743051466.jpg" alt="Photograph from the InAmigos Foundation gallery">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-image"></i></span>
+          <span class="gallery-overlay">Our Work</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="From the InAmigos Foundation gallery">
+          <img class="js-img" loading="lazy" src="https://inamigosfoundation.org.in/public/storage/gallery/1743051449.jpg" alt="Photograph from the InAmigos Foundation gallery">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-image"></i></span>
+          <span class="gallery-overlay">Community Impact</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="From the InAmigos Foundation gallery">
+          <img class="js-img" loading="lazy" src="https://inamigosfoundation.org.in/public/storage/gallery/1743051438.jpg" alt="Photograph from the InAmigos Foundation gallery">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-image"></i></span>
+          <span class="gallery-overlay">Our Work</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="Illustrative photo — women's self-help group, India (not an InAmigos-specific photograph)">
+          <img class="js-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Self_Help_Group.jpg?width=700" alt="Illustrative photo of a women's self-help group in India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-venus"></i></span>
+          <span class="gallery-overlay">Women Empowerment</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="Illustrative photo — street dog, India (not an InAmigos-specific photograph)">
+          <img class="js-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/An_Indian_Pariah_Dog.jpg?width=700" alt="Illustrative photo of a street dog in India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-paw"></i></span>
+          <span class="gallery-overlay">Animal Welfare</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="Illustrative photo — tree plantation, India (not an InAmigos-specific photograph)">
+          <img class="js-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/India_-_Kids_-_Planting_trees_for_her_future_(4040009491).jpg?width=700" alt="Illustrative photo of a child planting a sapling in India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+          <span class="gallery-overlay">Tree Plantation</span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-caption="Illustrative photo — classroom learning, India (not an InAmigos-specific photograph)">
+          <img class="js-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Classroom_in_a_Government_Primary_school_in_Kerala.jpg?width=700" alt="Illustrative photo of children in a classroom in India">
+          <span class="img-fallback" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="gallery-overlay">Education</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Contact Us</p>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Ward No. 5, Gram Post, Sipat Ujwal Nagar,<br>Bilaspur, Chhattisgarh — 495555</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+916267309902">+91 626 730 9902</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+          </li>
+        </ul>
+
+        <div class="social-row" aria-label="Social media">
+          <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" rel="noopener" aria-label="InAmigos Foundation on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/inamigos/" target="_blank" rel="noopener" aria-label="InAmigos Foundation on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-field">
+          <label for="contactName">Full Name</label>
+          <input type="text" id="contactName" name="contactName" autocomplete="name" required>
+          <span class="field-error" id="contactNameError"></span>
+        </div>
+        <div class="form-field">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="contactEmail" autocomplete="email" required>
+          <span class="field-error" id="contactEmailError"></span>
+        </div>
+        <div class="form-field">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+          <span class="field-error" id="contactMessageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+        <p class="contact-form-note">This opens your email app with the message addressed to support@inamigosfoundation.org.in — this static page has no backend of its own.</p>
+        <p class="contact-form-success" id="contactSuccess" role="status" hidden>Your email app should now be open with your message ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-about">
+      <a href="#home" class="logo logo--footer">
+        <span class="logo-mark" aria-hidden="true"><img src="images/InAmigos Logo.jpg" ></span>
+        <span class="logo-text" style="color: white;" >InAmigos<span class="logo-text-accent">Foundation</span></span>
+      </a>
+      <p>A Section 8 registered non-profit working across India on education, food distribution, women empowerment, animal welfare, environment and skill development.</p>
+      <div class="social-row" aria-label="Social media">
+        <a href="https://www.facebook.com/InAmigos/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/inamigos/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#causes">Causes</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get Involved</h3>
+      <ul>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="https://inamigosfoundation.org.in/became-volunteer" target="_blank" rel="noopener">Join Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul class="footer-contact">
+        <li>Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh — 495555</li>
+        <li><a href="tel:+916267309902">+91 626 730 9902</a></li>
+        <li><a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 InAmigos Foundation. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ============ LIGHTBOX (GALLERY) ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
